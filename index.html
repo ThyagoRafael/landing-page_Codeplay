@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="styles.css" />
+
+		<title>Codeplay - Seu início na programação.</title>
+	</head>
+	<body>
+		<header>
+			<div>
+				<a href="#">
+					<img src="./assets/logo/logo_codeplay.jpg" alt="Logo do Codeplay" />
+				</a>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#funcionalidades">Funcionalidades</a></li>
+					<li><a href="#contatos">Contatos</a></li>
+					<li><button>Começar agora</button></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="hero_descricao">
+					<h1>Aprender nunca foi tão interativo</h1>
+					<p>O CodePlay conecta estudantes ao conhecimento de forma prática, dinâmica e divertida.</p>
+					<button>Começar agora</button>
+				</div>
+
+				<div class="hero_imagem">
+					<img src="./assets/imagens/Woman.png" alt="Mulher programando em um notebook" />
+				</div>
+			</section>
+
+			<section class="sobre" id="sobre">
+				<div class="sobre_imagem">
+					<img src="./assets/logo/logo_codeplay_grande.png" alt="Imagem do Codeplay" />
+				</div>
+
+				<div class="sobre_descricao">
+					<h2>Sobre</h2>
+					<p>
+						O Codeplay é uma plataforma que conecta o estudante à sua instituição, tornando o
+						aprendizado mais prático. Nosso objetivo é facilitar o estudo por meio de experiências de
+						aprendizado dinâmicas que ajudam alunos e professores a explorarem conteúdos de forma
+						eficiente e divertida.
+					</p>
+				</div>
+			</section>
+
+			<section class="funcionalidades" id="funcionalidades">
+				<h2>Funcionalidades</h2>
+				<div class="grupo-cartoes">
+					<div class="cartao-func">
+						<img src="./assets/imagens/Gamepad.png" alt="Controle de videogame" />
+						<h4>Aprendizado gamificado</h4>
+						<p>Aprenda jogando, se divirta e desafie seus amigos com sua pontuação.</p>
+					</div>
+					<div class="cartao-func">
+						<img src="./assets/imagens/Mortarboard.png" alt="Chapéu de formatura" />
+						<h4>Conteúdo acadêmico</h4>
+						<p>A plataforma contém conteúdos que são ministrados em universidades.</p>
+					</div>
+					<div class="cartao-func">
+						<img src="./assets/imagens/Book.png" alt="Livro fechado" />
+						<h4>Trilha de conhecimentos</h4>
+						<p>Conheça nossas trilhas e aprenda de forma evolutiva e direcionada.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="equipe" id="equipe">
+				<h2>Nossa equipe</h2>
+				<div class="grupo-equipe">
+					<div class="cartao-equipe">
+						<img src="./assets/fotos_membros/foto_Brian.jpg" alt="Foto de Brian Luka" />
+						<h4>Brian Luka</h4>
+						<p>Documentação</p>
+					</div>
+
+					<div class="cartao-equipe">
+						<img src="./assets/fotos_membros/foto_Diogo.jpeg" alt="Foto de Diogo Lopes" />
+						<h4>Diogo Lopes</h4>
+						<p>Documentação</p>
+					</div>
+
+					<div class="cartao-equipe">
+						<img src="./assets/fotos_membros/foto_Isaac-N.jpg" alt="Foto de Isaac Newton" />
+						<h4>Isaac Newton</h4>
+						<p>Desenvolvedor Back-end</p>
+					</div>
+
+					<div class="cartao-equipe">
+						<img src="./assets/fotos_membros/foto_Isack-P.jpg" alt="Foto de Isack Phelipe" />
+						<h4>Isack Phelipe</h4>
+						<p>Documentação</p>
+					</div>
+
+					<div class="cartao-equipe">
+						<img src="./assets/fotos_membros/foto_Luis.jpg" alt="Foto de Luís Augusto" />
+						<h4>Luís Augusto</h4>
+						<p>Desenvolvedor Back-end</p>
+					</div>
+
+					<div class="cartao-equipe">
+						<img src="./assets/fotos_membros/foto_Maria.jpg" alt="Foto de Maria Vitória" />
+						<h4>Maria Vitória</h4>
+						<p>Documentação</p>
+					</div>
+
+					<div class="cartao-equipe">
+						<img src="./assets/fotos_membros/foto_Pablo.jpg" alt="Foto de Pablo Carvalho" />
+						<h4>Pablo Carvalho</h4>
+						<p>DBA</p>
+					</div>
+
+					<div class="cartao-equipe">
+						<img src="./assets/fotos_membros/foto_Thyago.jpg" alt="Foto de Thyago Rafael" />
+						<h4>Thyago Rafael</h4>
+						<p>Desenvolvedor Front-end</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="contatos" id="contatos">
+				<div class="contatos_descricao">
+					<h2>Fale conosco</h2>
+					<p>
+						Quer saber mais como usar o Codeplay na sua instituição? <br />
+						Entre em contato com nossa equipe!
+					</p>
+
+					<img src="./assets/imagens/Contact.png" alt="Imagem de contatos" />
+				</div>
+
+				<div class="contatos_formulario">
+					<form>
+						<div class="grupo-input">
+							<label for="nome">Nome completo</label>
+							<input type="text" id="nome" placeholder="Digite seu nome completo" required />
+						</div>
+						<div class="grupo-input">
+							<label for="email">E-mail</label>
+							<input type="email" id="email" placeholder="Digite seu e-mail" required />
+						</div>
+						<div class="grupo-input">
+							<label for="telefone">Telefone com DDD</label>
+							<input type="tel" id="telefone" placeholder="Digite seu telefone com DDD" required />
+						</div>
+						<div class="grupo-input">
+							<label for="mensagem">Mensagem</label>
+							<textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+						</div>
+
+						<div class="botao">
+							<button type="submit">Enviar mensagem</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div>
+				<img src="./assets/logo/logo_codeplay.jpg" alt="Logo do Codeplay" />
+				<p>EquipeCodeplay@2025</p>
+			</div>
+		</footer>
+	</body>
+</html>

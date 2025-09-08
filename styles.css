@@ -1,0 +1,370 @@
+/* -------------------
+   Estilo Global
+------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Manrope", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 16px;
+	color: #094066;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+section {
+	width: 100%;
+
+	scroll-margin-top: 80px;
+}
+
+button {
+	border: none;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #1285d4;
+
+	padding: 0.8rem 1.3rem;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+
+	cursor: pointer;
+
+	transition: 0.3s linear;
+}
+
+button:hover {
+	background-color: #4497fd;
+}
+
+/* -------------------
+   Cabeçalho
+------------------- */
+header {
+	width: 100%;
+	padding: 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	position: sticky;
+	top: 0;
+
+	background-color: #ffffff;
+
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+
+	font-weight: bold;
+}
+
+header nav ul li a {
+	padding: 0.8rem 1.3rem;
+
+	transition: 0.3s linear;
+}
+
+header nav ul li a:hover {
+	color: #1285d4;
+}
+
+/* -------------------
+   Cabeçalho
+------------------- */
+
+.hero {
+	height: calc(100vh - 96px);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 8rem;
+
+	background: linear-gradient(rgba(18, 133, 212, 0.5) 0%, rgb(255, 255, 255, 0.1) 100%);
+}
+
+.hero .hero_descricao {
+	max-width: 550px;
+}
+
+.hero .hero_descricao h1 {
+	font-size: 2.25rem;
+	font-weight: 900;
+	letter-spacing: 3px;
+
+	margin-bottom: 1.5rem;
+}
+
+.hero .hero_descricao p {
+	font-size: 1.25rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	line-height: 2rem;
+
+	margin-bottom: 2.5rem;
+}
+
+/* -------------------
+   Sobre
+------------------- */
+.sobre {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 8rem;
+}
+
+.sobre .sobre_descricao {
+	max-width: 525px;
+}
+
+.sobre .sobre_imagem {
+	display: grid;
+	place-items: center;
+}
+
+.sobre .sobre_descricao h2 {
+	font-size: 2rem;
+	font-weight: 900;
+	letter-spacing: 3px;
+
+	margin-bottom: 1rem;
+}
+
+.sobre .sobre_descricao p {
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 2rem;
+}
+
+/* -------------------
+   Funcionalidades
+------------------- */
+.funcionalidades {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 1.5rem 0;
+
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.1) 0%,
+		rgba(18, 133, 212, 0.1) 50%,
+		rgba(255, 255, 255, 0.1) 100%
+	);
+}
+
+.funcionalidades h2 {
+	font-size: 2rem;
+	font-weight: 900;
+	letter-spacing: 3px;
+
+	margin-bottom: 2.5rem;
+}
+
+.funcionalidades .grupo-cartoes {
+	display: flex;
+	justify-content: center;
+	gap: 8rem;
+}
+
+.funcionalidades .grupo-cartoes .cartao-func {
+	max-width: 230px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.funcionalidades .grupo-cartoes .cartao-func h4 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	line-height: 2rem;
+
+	text-align: center;
+	max-width: 205px;
+}
+
+.funcionalidades .grupo-cartoes .cartao-func p {
+	line-height: 1.5rem;
+	text-align: center;
+}
+
+/* -------------------
+   Equipe
+------------------- */
+.equipe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 8rem 1.5rem;
+}
+
+.equipe h2 {
+	font-size: 2rem;
+	font-weight: 900;
+	letter-spacing: 3px;
+
+	margin-bottom: 2.5rem;
+}
+
+.equipe .grupo-equipe {
+	width: 100%;
+	max-width: 1200px;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+
+	gap: 2rem;
+}
+
+.equipe .grupo-equipe .cartao-equipe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 1rem 0;
+}
+
+.equipe .grupo-equipe .cartao-equipe h4 {
+	font-size: 1.25rem;
+}
+
+.equipe .grupo-equipe .cartao-equipe img {
+	width: 150px;
+	height: 150px;
+	border-radius: 32px;
+	object-fit: cover;
+
+	margin-bottom: 0.5rem;
+}
+
+/* -------------------
+   Contatos
+------------------- */
+.contatos {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 8rem;
+}
+
+.contatos .contatos_descricao {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	max-width: 400px;
+}
+
+.contatos .contatos_descricao h2 {
+	font-size: 2rem;
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+
+.contatos .contatos_descricao p {
+	font-size: 1.25rem;
+	line-height: 2rem;
+}
+
+.contatos .contatos_descricao img {
+	width: 225px;
+	height: 225px;
+}
+
+.contatos .contatos_formulario {
+	max-width: 332px;
+	width: 100%;
+}
+
+.contatos .contatos_formulario form {
+	width: 100%;
+}
+
+.contatos .contatos_formulario form .grupo-input {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.contatos .contatos_formulario form .grupo-input label {
+	font-weight: bold;
+}
+
+.contatos .contatos_formulario form .grupo-input input {
+	outline: none;
+	border: 1px solid #094066;
+
+	height: 2.75rem;
+	border-radius: 0.5rem;
+
+	font-size: 1rem;
+	padding-left: 0.5rem;
+
+	margin-bottom: 1rem;
+}
+
+.contatos .contatos_formulario form .grupo-input textarea {
+	outline: none;
+	border: 1px solid #094066;
+
+	width: 20.75rem;
+	height: 8rem;
+	resize: none;
+	border-radius: 0.5rem;
+
+	font-size: 1rem;
+	padding: 0.5rem;
+
+	margin-bottom: 1.5rem;
+}
+
+.contatos .contatos_formulario form .grupo-input input:focus,
+.contatos .contatos_formulario form .grupo-input textarea:focus {
+	outline: 1px solid #094066;
+}
+
+.contatos .contatos_formulario form .botao {
+	text-align: center;
+}
+
+/* -------------------
+   Rodapé
+------------------- */
+footer {
+	display: flex;
+	justify-content: center;
+
+	padding: 1.5rem 0;
+}
+
+footer div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer div p {
+	font-weight: bold;
+}
