@@ -259,6 +259,24 @@ header nav ul li a:hover {
 	margin-bottom: 0.5rem;
 }
 
+.equipe .grupo-equipe .cartao-equipe p {
+	margin-bottom: 0.8rem;
+}
+
+.equipe .grupo-equipe .cartao-equipe a {
+	font-size: 2rem;
+	padding: 0.4rem 0.6rem;
+}
+
+.equipe .grupo-equipe .cartao-equipe a i {
+	transition: all 0.2s linear;
+}
+
+.equipe .grupo-equipe .cartao-equipe a:hover i {
+	transform: scale(1.2);
+	color: #1285d4;
+}
+
 /* -------------------
    Contatos
 ------------------- */
